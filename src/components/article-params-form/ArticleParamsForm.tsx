@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, FormEvent } from 'react';
+import { useState, useRef, FormEvent } from 'react';
 import { Text } from '../text';
 import { ArrowButton } from 'components/arrow-button';
 import { Button } from 'components/button';
@@ -72,12 +72,9 @@ export const ArticleParamsForm = ({
 					className={styles.form}
 					onSubmit={handleApplyArticleState}
 					onReset={handleResetArticleState}>
-					<Text
-						children={'задайте параметры'}
-						size={31}
-						uppercase={true}
-						weight={800}
-					/>
+					<Text size={31} uppercase={true} weight={800}>
+						задайте параметры
+					</Text>
 					<Select
 						title={'шрифт'}
 						onChange={handleOnChange('fontFamilyOption')}

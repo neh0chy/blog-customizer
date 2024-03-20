@@ -1,9 +1,11 @@
 import { createRoot } from 'react-dom/client';
 import { StrictMode, CSSProperties, useState } from 'react';
-import { ArticleStateType } from './constants/articleProps';
+import {
+	ArticleStateType,
+	defaultArticleState,
+} from './constants/articleProps';
 import { Article } from './components/article/Article';
 import { ArticleParamsForm } from './components/article-params-form/ArticleParamsForm';
-import { defaultArticleState } from './constants/articleProps';
 import clsx from 'clsx';
 
 import './styles/index.scss';
